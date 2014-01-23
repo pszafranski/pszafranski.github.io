@@ -1,0 +1,118 @@
+\documentclass{article}
+
+\addtolength{\textwidth}{1.5cm}
+\addtolength{\hoffset}{-1.5cm}
+\addtolength{\textheight}{1.5cm}
+\addtolength{\voffset}{-1.5cm}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+
+\begin{document}
+
+\setlength{\parindent}{15pt}
+
+\begin{footnotesize}\begin{center}I. Przestrzeń $n$-wymiarowa - Formy liniowe i dwuliniowe \end{center}\end{footnotesize}
+
+Wyraźmy iloczyn skalarny dwóch wektorów $x$ i $y$ przez ich współrzędne $\xi_1$, $\xi_1$,..., $\xi_n$ i $\eta_1$, $\eta_2$, ... , $\eta_n$ w unormowanej bazie ortogonalnej. Mamy
+
+\begin{center}$x=\xi_1e_1+\xi_2e_2+...+\xi_ne_n$\hspace{0.5cm}i\hspace{0.5cm}$y=\eta_1e_1+\eta_2e_2+...+\eta_ne_n$ .\end{center}
+
+\noindent Wówczas
+\begin{center}$(x,y)=(\xi_1e_1+\xi_2e_2+...+\xi_ne_n,\eta_1e_1+\eta_2e_2+...+\eta_ne_n)=\xi_1\overline{\eta}_1+\xi_2\overline{\eta}_2+...+\xi_n\overline{\eta}_n$ .\end{center}
+\noindent (Por. przykład 1 tego paragrafu)
+
+Wyraźmy współrzędne $\xi_1$ wektora $x$ w unormowanej bazie ortogonalnej przez wektory bazy i przez sam wektor $x$. Mamy
+\begin{center}$x=\xi_1e_1+\xi_2e_2+...+\xi_ne_n$ .\end{center}
+
+\noindent Mnożąc skalarnie obie strony równości przez $e_i$ otrzymamy
+\begin{center}$(x,e_i)=\xi_1(e_1,e_i)+\xi_2(e_2,e_i)+...+\xi_i(e_i,e_i)+...+\xi_n(e_n,e_i)$ ,\end{center}
+\noindent czyli
+\begin{center}$(x,e_i)=\xi_i$ .\end{center}
+
+Tak samo jak w \S \hspace{0.1cm}3 dowodzi się, że wszystkie przestrzenie euklidesowe zespolone o danym wymiarze $n$ są izomorficzne.
+
+\doublespace
+
+\singlespace
+\textbf{4. Formy dwuliniowe i formy kwadratowe.} Wszystkie określenia (funkcji liniowej, formy kwadratowej itd.) wprowadzone w \S \hspace{0.1cm} 4 (z wyjątkiem pojęcia dodatniej określoności) mają sens dla przestrzeni liniowej nad dowolnym ciałem, w tym także nad ciałem liczb zespolonych. Jednakże w przypadku przestrzeni liniowej zespolonej można jeszcze inaczej wprowadzić te pojęcia; dla nas ten drugi sposób będzie istotniejszy.
+
+\onehalfspacing
+\singlespace
+\texttt{Funkcje liniowe pierwszego i drugiego rodzaju.} Funkcję przyporządkowującą każdemu wektorowi liczbę zespoloną nazywamy \textit{funkcją liniową pierwszego rodzaju}, jeżeli spełnia ona następujące warunki:
+
+\doublespacing
+
+1\textordmasculine \hspace{4.0cm}$f(x+y)=f(x)+f(y)$ ,
+
+2\textordmasculine \hspace{4.5cm}$f(\lambda x)=\lambda f(x)$ .
+
+\singlespace
+To określenie pokrywa się z określeniem funkcji liniowej danym w \S \hspace{0.1cm}4.
+
+\textit{Funkcją liniową drugiego rodzaju} nazywamy funkcję spełniającą warunki
+
+\doublespace
+1\textordmasculine \hspace{4.0cm}$f(x+y)=f(x)+f(y)$ ,
+
+2\textordmasculine \hspace{4.5cm}$f(\lambda x)=\overline\lambda f(x)$ .
+
+\singlespace
+Tak samo jak w \S \hspace{0.1cm}4 można wykazać, że każdą funkcję liniową pierwszego rodzaju można zapisać w postaci
+
+\doublespace
+\begin{center}$f(x)=a_1\xi_1+a_2\xi_2+...+a_n\xi_n$ ,\end{center}
+
+\singlespace
+\noindent gdzie $\xi_i$ są współrzędnymi wektora $x$ w bazie $e_1,e_2,...,e_n$, a $a_i$ są to stałe, $a_i=f(e_i)$.
+
+Natomiast każdą funkcję liniową drugiego rodzaju można zapisać w postaci
+
+\begin{center} $f(x)=b_1\overline\xi_1+b_2\overline\xi_2+...+b_n\overline\xi_n$ .\end{center}
+
+\noindent Jest jasne, że jeżeli $f(x)$ jest funkcją liniową pierwszego rodzaju, to $\overline{f(x)}$ jest funkcją liniową drugiego rodzaju.
+
+Zgodnie z przyjętym wyżej określeniem (ustęp 2, \S \hspace{0.1cm} 4), \textit{funkcją dwulinoową} nazywamy funkcję dwóch wektorów $A(x;y)$ liniową ze względu na każdy z argumentów. Istnienie w przestrzeni zespolonej dwóch typów funkcji liniowych prowadzi do istnienia aż czterech typów funkcji dwuliniowych: liniowych pierwszego rodzaju ze względu na $x$ i ze względu na $y$, pierwszego rodzaju ze względu na $x$, a drugiego rodzaju ze względu na $y$, drugiego rodzaju ze względu na $x$ i pierwszego rodzaju ze względu na $y$ i wreszcie drugiego rodzaju ze względu na oba argumenty. Trzeci i czwarty typ są zespolone sprzężone odpowiednio z typem drugim i pierwszym, a funkcje dwuliniowe typu pierwszego określa się w przestrzeni zespolonej dosłownie tak samo jak w przestrzeni rzeczywistej. Dlatego zajmiejmy się bliżej tylko formami dwuliniowymi drugiego typu. Formy te będziemy dalej nazywać krótko formami dwuliniowymi. Wprowadzimy następujące określenie.
+
+\onehalfspacing
+\singlespace
+Określenie 1. Będziemy mówili, że $A(x:y)$ jest \textit{funkcją (formą) dwuliniową} wektorów $x$ i $y$, jeżeli
+
+1\textordmasculine $A(x;y)$ przy ustalonym $y$ jest funkcją liniową pierwszego rodzaju wektora $x$;
+
+2\textordmasculine $A(x;y)$ przy ustalonym $x$ jest funkcją liniową drugiego rodzaju wektora $y$. 
+
+\noindent Albo też, ujmując to wzorami:
+
+\doublespace
+\singlespace
+
+1\textordmasculine \hspace{3.45cm} $A(x_1+x_2py)=A(x_1;y)+A(x_2;y)$ ,
+\begin{center}$A(\lambda x;y)=\lambda A(x;y)$ ,\end{center}
+
+2\textordmasculine \hspace{3.05cm} $A(x;y_1+y+2)=A(x;y_1)+A(x;y_2)$ ,
+\begin{center}$A(x;\mu y)=\overline{\mu} A(x;y)$ ,\end{center}
+
+Przykładem funkcji dwuliniowej jest iloczyn skalarny w przestrzeni euklidesowej zespolonej
+
+\begin{center}$A(x;y)=(x,y)$ ,\end{center}
+
+\noindent traktowany jako funkcja wektorów $x$ i $y$. Innym przykładem formy dwuliniowej w przestrzeni zespolonej jest wyrażenie
+
+\begin{center}$A(x;y)=\sum\limits_{i,k=1}^n a_{ik}\xi_i\overline{\eta}_k$ ,\end{center}
+
+\noindent traktowane jako funkcja wektorów
+
+\begin{center}$x=\xi_1e_1+\xi_2e_2+...+\xi_ne_n$\end{center}
+
+\noindent i
+
+\begin{center}$y=\eta_1e_1+\eta_2e_2+...+\eta_ne_n$ .\end{center}
+
+\noindent Łatwo sprawdzić, że warunki określające funkcję dwuliniową są przy tym spełnione.
+
+\end{document}
